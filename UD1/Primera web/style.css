@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Anuphan:100,200,300,regular,500,600,700);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*, ::before, ::after{
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 40ch;
+	margin: 0 auto;
+	font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+img{
+	max-width: 100%;;
+}
+
+h1{
+	background-color: tomato;
+	color:whitesmoke;
+	text-align: center;
+	font-weight: 400;
+	font-size: 2.5rem;
+	letter-spacing: 0.5ch;
+	font-family: "Anuphan",Arial, Helvetica, sans-serif;
+	/* text-shadow: 2px 2px 7px black; */
+	padding: 2rem;
+}
+
+h2{
+	color: tomato;
+	font-weight: 400;
+	text-decoration: 2px wavy underline tomato;
+	font-family: "Anuphan", Arial, Helvetica, sans-serif;
+	margin-top: 3rem;
+}
+
+strong{
+	background-color: rgba(255, 99, 71, 0.2);
+	color: red;
+}
+
+em, a{
+	color: tomato;
+}
+a{
+	background-color: rgba(255, 99, 71, 0.2);;
+}
+
+pre{
+	background-color: #eee;
+	margin-left: 1rem;
+	margin-right:1rem;
+	padding: 1rem;
+}
+
+form{
+	background-color: #eee;
+	padding: 1rem;
+}
+
+input, button, select{
+	border: 1px solid tomato;
+	background-color: white;
+	padding: 0.25rem;
+	width: 20ch;
+	margin-bottom: 1rem;	
+}
+
+input[type="checkbox"], input[type="radio"]{
+	width: auto;
+}
+
+fieldset{
+	margin-bottom: 1rem;
+	border: 1px solid tomato;
+}
+
+input[type="submit"]{
+	background-color: tomato;
+	color: #eee;
+	cursor: pointer;
+}
+input[type="submit"]:hover{
+	background-color: red;
+}

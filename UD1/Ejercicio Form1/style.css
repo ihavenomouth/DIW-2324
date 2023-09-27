@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script:regular);
+
+*, ::before, ::after{
+	box-sizing: border-box;
+}
+
+
+
+body{
+	background-color:#141E46;
+	color:#FFF5E0;
+	font-family: 'Comfortaa',Arial, Helvetica, sans-serif;
+	max-width: 60ch;
+	margin: 0 auto;
+}
+
+h1{
+	font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+	background-color: #C70039;
+	color: #FFF5E0;
+	padding: 2rem;
+	font-size: 4rem;
+}
+
+form{
+	background-color: #FF6969;
+	padding: 1rem;
+	max-width: 40ch;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+input, select{
+	background-color: #FFF5E0;
+	border: 2px solid #141E46;
+	padding: 0.5rem;
+	min-width: 20ch;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	min-width: auto;;
+}
+
+input[type="submit"] {
+	background-color: #C70039;
+	color:#FFF5E0;
+}
+
+label{
+	border-left: 3px solid #141E46;
+	padding-left: 0.25rem;
+	margin-left: 0.5rem;
+}
+
+fieldset{
+	background-color: #FFF5E0;
+	margin-bottom: 1rem;
+	border: 2px solid #141E46;
+	border-radius: 5px;
+}
+fieldset legend{
+	color: #FFF5E0;
+	background-color: #141E46;
+}
+fieldset label{
+	color: #141E46;
+}
+

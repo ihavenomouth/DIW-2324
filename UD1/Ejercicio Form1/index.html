@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Ejercicio 1</h1>
+
+<p>Crea una página web que contenga un formulario para introducir datos con los siguientes controles:</p>
+
+<ul>
+	<li>Nombre: de tipo texto</li>
+	<li>Apellidos: control de tipo texto</li>
+	<li>Mayor de edad: dos opciones excluyentes Sí o No</li>
+	<li>Correo electrónico: de tipo email</li>
+	<li>Una casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas"</li>
+	<li>Una casilla de verificación con el texto "He leído y acepto las condiciones y la política de protección de datos"</li>
+	<li>Un botón de envío</li>
+</ul>
+
+<p>Además:</p>
+<ul>
+	<li>El título de la página será Ejercicio 1 - formulario.</li>
+	<li>El método de envío del formulario será GET.</li>
+	<li>El campo nombre, apellidos, mayor de edad y la casilla de privacidad será obligatorio que estén rellenas</li>
+	<li>El nombre y el apellido no pueden tener más de 20 caracteres ni menos de 2.</li>
+	<li>La casilla para recibir información debe estar activada por defecto.</li>
+</ul>
+	<form action="saludo.php" method="get">
+		<label for="txtNombre">Nombre:</label><br>
+		<input required minlength="3" maxlength="25" type="text" name="txtNombre" id="txtNombre"><br>
+	
+		<label for="txtEdad">Edad:</label><br>
+		<input type="number" name="txtEdad" id="txtEdad" min="14" max="90" required><br>
+	
+		<label for="txtInteres">Interes:</label><br>
+		<input type="text" name="txtInteres" id="txtInteres" placeholder="Ej. fotografía" list="listaInteres"><br>
+	
+	
+		<fieldset>
+			<legend>Elige tu comida:</legend>
+			<div>
+				<input type="checkbox" id="montadito" name="montadito" checked />
+				<label for="montadito">Montadito de pringá</label>
+			</div>
+			<div>
+				<input type="checkbox" id="serranito" name="serranito" />
+				<label for="serranito">Serranito</label>
+			</div>
+		</fieldset>
+	
+	
+		<fieldset>
+			<legend>Elige una bebida:</legend>
+	
+			<div>
+				<input type="radio" id="agua" name="bebida" value="agua" checked />
+				<label for="agua">Agua</label>
+			</div>
+	
+			<div>
+				<input type="radio" id="cerveza" name="bebida" value="cerveza" />
+				<label for="cerveza">Cerveza</label>
+			</div>
+	
+			<div>
+				<input type="radio" id="refresco" name="bebida" value="refresco" />
+				<label for="refresco">Refresco</label>
+			</div>
+		</fieldset>
+	
+		<label for="editores">Elige un editor:</label>
+	
+		<select required name="editores" id="editores">
+			<option value="">-- Elige una opción --</option>
+			<option value="emacs">Emacs</option>
+			<option value="vim">Vim</option>
+			<option value="nano">Nano</option>
+			<option value="micro">Micro editor</option>
+			<option value="vscode">Visual Studio code</option>
+			<option value="notepadqq">Notepadqq</option>
+		</select>
+	
+		<input type="submit" value="Enviar"> <br>
+		<input type="button" id="btnCalcular" value="Calcular" /><br>
+	</form>
+</body>
+</html>

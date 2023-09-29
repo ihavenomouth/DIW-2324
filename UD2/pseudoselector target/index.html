@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Uso del pseudoselector :target</h1>
+	<p>Abrir el formulario de <a href="#crearProducto">crear producto</a></p>
+	<p>Abrir el formulario de <a href="#eliminarProducto">eliminar producto</a></p>
+
+	<div id="crearProducto">
+		<h2>Crear producto</h2>
+		<form>
+			<label for="txtProducto">Nombre producto:</label><br>
+			<input type="text" name="txtProducto" id="txtProducto"><br>
+			<button>Crear producto</button>
+		</form>
+		<a href="#">Cerrar</a>
+	</div>
+
+	<div id="eliminarProducto">
+		<h2>Eliminar producto</h2>
+		<form>
+			<label for="txtProducto">Nombre producto:</label><br>
+			<input type="text" name="txtProducto" id="txtProducto"><br>
+			<button>Eliminar producto</button>
+		</form>
+		<a href="#">Cerrar</a>
+	</div>
+
+	
+</body>
+</html>

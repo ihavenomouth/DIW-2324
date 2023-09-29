@@ -1,0 +1,78 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+/*
+Haz que todos los párrafos tengan como color de texto #336 
+Haz que la clase destacado tenga como color de fondo bisque.
+Haz que el elemento con id resultado tenga un margen de 2rem y un borde de 1px de color rojo.*/
+p {
+	color:#336;
+}
+.destacado{
+	background-color: bisque;
+}
+#resultado{
+	border: 1px solid red;
+	margin: 2rem;
+}
+
+/*Haz que los párrafos que estén dentro de la etiqueta <header>tenga un tamaño de fuente de 1.5rem 
+Haz que los párrafos que vengan tras otro párrafo tengan un borde izquierdo de 6px de color #336 y un padding por la izquierda de 2px 
+Finalmente haz que los hiperenlaces que sean hijos directos de un elemento con clase destacado tengan un color rojo. */
+
+header p{
+	font-size: 1.5rem;
+}
+p + p{
+	border-left: 6px solid #336;
+	padding-left: 2px;
+}
+.destacado > a{
+	color: red;
+}
+
+
+input:focus-visible{
+	outline: 2px solid #336;
+}
+
+input:valid{
+	background-color: yellowgreen;
+	color:aliceblue
+}
+input:invalid{
+	background-color: deeppink;
+	color:aliceblue
+}
+
+
+div.resultado{
+	border: 1px solid red;
+	background-color: deeppink;
+	padding: 2rem;
+	color: white;
+	border-radius: 5px;;
+}
+
+div.resultado:empty{
+	display:none;
+}
+
+/*
+Ejercicio 2.1b: Usando el resultado del ejemplo 2.1,
+añade varios párrafos a la división con id resultado y haz que los párrafos pares tengan como color de fondo #eee,
+también que cuando el ratón se coloque por encima de cualquier párrafo,
+el texto se ponga en negrita. Finalmente,
+el último párrafo dentro de la división tendrá como tamaño de texto 0.75rem.
+*/
+
+#resultado p:nth-child(even){
+	background-color: #eee;
+}
+p:hover{
+	font-weight: 900;
+}
+
+#resultado p:last-child{
+	font-size: 0.75rem;
+}

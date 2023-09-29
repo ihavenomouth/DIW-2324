@@ -1,0 +1,13 @@
+*,::after, ::before{
+	box-sizing: border-box;
+}
+
+#crearProducto, #eliminarProducto{
+	display:none;
+}
+
+#crearProducto:target, #eliminarProducto:target {
+	display: block;
+}
+
+

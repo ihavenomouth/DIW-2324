@@ -1,0 +1,35 @@
+td,th{
+	border: 1px solid black;
+	padding: 0.25rem;
+	text-align: center;
+}
+table{
+	border-collapse: collapse;
+}
+
+#ejemplo{
+	width: 80%;
+	height: 200px;
+	background-color: aqua;
+}
+table{
+	border-collapse: collapse;
+}
+
+:root {
+	--colorcard: #2b78ed;
+}
+
+li {
+	max-width: 60ch;
+	background-color: var(--colorcard);
+}
+
+p{
+	background-color: aliceblue;
+}
+
+p{
+	background-color: #2b78ed;
+}
+

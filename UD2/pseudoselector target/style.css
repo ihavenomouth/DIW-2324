@@ -1,9 +1,15 @@
-*,::after, ::before{
-	box-sizing: border-box;
-}
+@import
+ url(https://fonts.googleapis.com/css?family=Roboto:regular);
+
+body{font-family: 'Roboto', Arial, Helvetica, sans-serif;}
+h1, h2{font-weight: normal;}
+*,::after, ::before{	box-sizing: border-box; }
+
 
 #crearProducto, #eliminarProducto{
 	display:none;
+	padding: 1rem;
+	background-color: #ddf;
 }
 
 #crearProducto:target, #eliminarProducto:target {

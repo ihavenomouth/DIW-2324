@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Gabarito',Arial, Helvetica, sans-serif;
+	max-width: 60ch;
+	padding: 0.5rem;
+	margin: 0 auto;
+}
+
+.card{
+	background-color: khaki;
+	padding: 1rem;
+	border-radius: 10px;
+	width: 200px;
+	overflow:auto;
+	margin-block: 50px;
+}
+.card img{
+	width:100%;
+}

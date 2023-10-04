@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*,::before,::after{box-sizing: border-box;}
+body{	
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin:0;
+  background-color: wheat;
+}
+h1, h2{font-weight: normal;}
+h1{ font-size: clamp(2rem, 10vw, 5rem)}
+
+header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #234567;
+  color: #f9bf3d;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+header h1 {
+	z-index: 1;
+	text-shadow: 0px 0px 20px black;
+}
+
+main{
+	max-width: 80ch;
+	margin: auto;
+}
+
+div.imagen {
+   float: left;
+	position: relative;
+	width: 320px;
+	height: 150px;
+	margin-right: 20px;
+}
+div.imagen img {
+	width: 300px;
+	position: absolute;
+	right: 0px;
+	top: -80px;
+	transform: rotate(5deg);
+}
+
+div.contenido{
+	padding: 0.5rem;
+}
+div.contenido p:last-child{
+	text-align: center;
+}
+div.contenido img {
+	max-width: 40ch;
+}
+
+code{
+	background-color: #f9bf3d;
+	color:#234567;
+}
+
+footer {
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9bf3d;
+	background-image: radial-gradient(#23456799 1.5px, #ff000000 1.5px);
+	background-size: 30px 30px;
+	color: #234567;
+}
+
+footer p {
+	font-size: 2rem;
+	text-shadow: 0px 0px 30px black;
+	margin:0;
+}

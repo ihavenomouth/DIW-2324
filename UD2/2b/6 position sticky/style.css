@@ -1,0 +1,19 @@
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td{
+	border:1px solid black;
+}
+
+th{
+	border: 1px solid black;
+	background-color: blue;
+	color:aliceblue;
+	position: sticky;
+	top:0;
+}

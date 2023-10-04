@@ -1,0 +1,21 @@
+Explicación:
+
+Nota: el main tiene un max-width: 80ch; margin: auto;
+
+1- Abre las dev tools y elimina la div.contenido, quita todas las reglas CSS de div.imagen y de la img de las setas.
+
+2- Activa el width de la imagen. Activa el top y el right. Hasta que position:absolute no esté activo, no funcionan. 
+
+3- Activa el position:absolute. Ningún antecesor tiene position:relative así que la referencia es el body. Juega con el top y el right.
+
+Fíjate que al sacar la imagen del flujo la div.imagen queda vacía y tiene un alto de 0.
+
+4- Activa el el position: relative de la div.imagen. La imagen queda relativa a la div.
+Activa el height, el width y el margin (no afecta anada ahora mismo).
+
+5- Si activas ahora el float: left; verás cómo el pie se mete a la derecha. El float saca la div.imagen del flujo normal y lo coloca a la izquierda (es como si ya no fuera block, sino inline).
+El float se utiliza para indicar la relación con el texto o elementos circundantes.
+
+6- Recarga la página para ver el resultado con la div.contenido a la derecha.
+
+Extra: juega con el zoom de la página: todo se redimensiona, pero el header sique ocupando 50vh (la mitad del viewport). La imagen se redimensiona con el ancho por el background-size: cover;

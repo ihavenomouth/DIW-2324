@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Ejemplo de position</h1>
+</header>
+<main>
+  <div class="imagen">
+	  <img src="sevilla.png">
+  </div>
+  <div class="contenido">
+	<p>La imagen de las setas tiene en el css <code>position: absolute;</code></p>
+	<p>Eso desbloque las propiedades <code>top, right, bottom y left</code> y lo <em>saca</em> 
+	del flujo normal de la página.</p>
+	<p>Los valores <code>top, right, bottom y left</code> son coordenadas respecto a la primera
+	etiqueta antecesora que encuentre con <code>position: relative</code> (si no encuentra ninguna 
+	será respecto al body).</p>
+	<p>Por eso la <code>&lt;div class="imagen"&gt;</code> tiene como <code>position:relative</code>, 
+	que no lo saca del flujo normal de la página.</p>
+	<p>Para que la imagen no se coloque encima de la cabecera en ninguna circunstancia, el <code>&lt;h1&gt;</code> tiene un
+	<code>z-indez:1></code>, lo que lo cola en una <em>capa</em> superior.</p>
+	<p><img src="setas.png" alt="Setas de la Encarnación"></p>
+  </div>
+</main>
+<footer>
+	<p>Fin del ejemplo</p>
+	<p>Javier Mancera</p>
+</footer>
+
+</body>
+</html>

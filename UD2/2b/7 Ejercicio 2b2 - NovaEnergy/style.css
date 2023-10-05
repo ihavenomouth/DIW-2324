@@ -26,4 +26,71 @@ body{
 .card-body{
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+	color: white;
+	position:relative;
 }
+.card-body a{
+	color: skyblue;
+}
+
+.card-icon{
+	color: #769d26;
+	background-color: #adff2f;
+	position:absolute;
+	top:-2rem;
+	right:-2.5rem;
+	padding: 0.5rem;
+}
+.card-icon a{
+	color: currentColor;
+}
+
+
+
+/* Segunda tarjeta */
+.card2{
+	background-color:#ffe4c4;
+	border: 2px solid brown;
+	max-width: 400px;
+	position:relative;
+	padding: 1rem;
+}
+
+.card2-header{
+	background-color: #e18989;
+	outline: 2px solid brown;
+	position: absolute;
+	width: 200px;
+	top: -0.5rem;
+	left: 100px;
+	text-align: center;
+	transition: all 1s;
+}
+.card2-header:hover {
+	top:0rem;
+}
+
+.card2-screw{
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	background-color: brown;
+	position: absolute;
+}
+.card2-screw:nth-child(1){
+	top: 1rem;
+	left: 1rem;
+}
+.card2-screw:nth-child(2){
+	top: 1rem;
+	right: 1rem;
+}
+.card2-screw:nth-child(3){
+	bottom: 1rem;
+	right: 1rem;
+}
+.card2-screw:nth-child(4){
+	bottom: 1rem;
+	left: 1rem;
+}
+

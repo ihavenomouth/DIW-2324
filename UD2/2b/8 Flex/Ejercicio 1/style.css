@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*,::before,::after{
+		box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: lavender;/*#1d122e;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.ejemplo img {
+	width: 400px;
+}
+
+
+.overview{
+	background-color: #2c254a;
+	border-radius: 20px;
+	width: 30ch;
+	color: whitesmoke;
+	overflow: hidden;
+}
+
+.overview .presentacion{
+	padding: 2rem;
+}
+
+.overview .presentacion > img {
+	border-radius: 50%;
+	width: 100px;
+	border: 2px solid rgb(132, 132, 249);
+	margin: 0 auto;
+	display: block;
+}
+.overview p {
+	font-size: 0.55rem;
+	text-align: center;
+	color: rgb(169, 169, 234);
+	line-height: 1.7;
+}
+
+.overview p.display{
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
+}
+.overview button{
+	width:100%;
+	margin-bottom: 0.5rem;
+	display:flex;
+	justify-content: space-between;
+	padding-inline: 1rem;
+	padding-block: 0.25rem;
+	border-radius: 5px;
+	border: 0px solid transparent;
+	color: whitesmoke;
+}
+
+.overview button.email {
+	background-color: #536af9;
+}
+.overview button.merch {
+	background-color: #453d62;
+}
+
+.overview button > svg{
+	height: 1.1rem;
+}
+
+.overview .redes-sociales{
+	background-color: #241f40;
+	display:flex;
+	justify-content: space-evenly;
+	padding-block: 1rem;
+}
+
+.overview .redes-sociales >div{
+	text-align: center;
+
+}
+
+.overview .redes-sociales>div p.followers-numbers{
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	margin:0;
+}
+.overview .redes-sociales>div p.followers-text{
+	margin:0;
+	color: rgb(169, 169, 234);
+}
+
+
+.overview .redes-sociales>div:nth-child(1) >svg{
+	border-radius: 50%;
+	background-color: red;
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+.overview .redes-sociales>div:nth-child(2)>svg {
+	border-radius: 50%;
+	background-color: skyblue;
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+}
+.overview .redes-sociales>div:nth-child(3)>svg {
+	border-radius: 50%;
+	background-color: purple;
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+}

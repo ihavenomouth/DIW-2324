@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+
+*,::after,::before{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Gabarito',Arial, Helvetica, sans-serif;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 3rem;
+	padding-left: 2rem;
+	background-color: #ca3d76;
+	color:white;
+	text-shadow: 4px 4px black;
+	padding-block:2rem;
+	
+}
+
+.container{
+	max-width: 100ch;
+	margin: 0 auto;
+	padding: 4rem;
+	background-color: #dfdfea;
+}
+
+.tarifas{
+	padding: 1rem;
+	background-color: #fff2f4;
+	border-radius: 10px;
+	box-shadow: 5px 10px 10px black;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.tarifas > div{
+	padding: 1rem;
+	background-color: white;
+	min-width: 20ch;
+	border-radius: 5px;
+}
+
+.tarifas>div:nth-child(2){
+	background-color: #ca3d76;
+	color: white;
+}
+
+.tarifas .nombre {
+	font-weight: 700;
+}
+.tarifas .small{
+	font-size: 0.6rem;
+	padding-bottom: 1rem;
+}
+
+.tarifas .precio{
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+
+@media screen and (width<=750px) {
+	.tarifas {
+		flex-direction: column;
+	}
+
+	.tarifas>div {
+		text-align: center;
+	}
+	.tarifas .nombre {
+		font-size: 2rem;
+	}
+	.tarifas .small {
+		letter-spacing: 0.15rem;
+	}
+}
+
+
+.tarifas>div{
+	position:relative;
+	overflow: hidden;
+}
+.tarifas>div::before{
+	content: '';
+	height: 2rem;
+	width: 100%;
+	position: absolute;
+	background-color: #ffc0cb70;
+	left:0;
+	top:-2rem;
+	transition: all 0.25s;
+}
+.tarifas>div:hover::before{
+	top:6rem;
+}

@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Inria+Sans:300,300italic,regular,italic,700,700italic);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Inria Sans',Arial, Helvetica, sans-serif;
+	display:flex;  /* descomentar la mediaquery */
+	flex-direction: column;
+	margin:0;
+	/* min-height: 100%; */
+	min-height: 100vh;
+}
+
+/* comentar y volverlo a quitar luego */
+/* @media screen and (width<=600px) {
+	body {
+		flex-direction: column;
+	}
+} */
+
+header{
+	padding:1rem;
+	background-color: brown;
+	color: bisque;
+}
+h1{margin:0; padding:0;text-align:center;}
+
+main{
+	padding:1rem;
+	flex-grow: 1; 
+}
+
+footer{
+	text-align: center;
+	background-color: bisque;
+	padding: 1rem;
+}
+
+
+
+form{
+	max-width: 40ch;
+	margin:0 auto;
+	background-color: bisque;
+	padding: 1rem;
+}
+
+legend, fieldset{
+	border: 1px solid brown;
+}
+
+fieldset{
+	padding: 1rem;
+}
+fieldset > div {
+	padding-bottom: 0.5rem;
+	display: flex;	
+}
+fieldset label{
+	background-color: brown;
+	color: bisque;
+	padding-inline: 1rem;
+}
+fieldset > div input{
+	flex-grow: 1; 
+	border: 1px solid brown;
+}
+
+fieldset>div.botonera {
+	/* display:flex;  */
+	gap: 1rem; 
+}
+
+button{
+	border: 1px solid brown;
+	background-color: brown;
+	color: bisque;
+	border-radius: 0px;
+	padding-inline: 1rem
+}
+button {
+	flex-grow: 1;
+	transition: flex-grow 0.5s;
+	cursor: pointer;
+}
+button:hover {
+	filter: brightness(1.2);
+	flex-grow: 3; 
+}
+
+
+/* FLEX shrink */
+
+.cita{
+	margin-top: 1rem;
+	display:flex;
+	justify-content: space-around;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	align-items: center;
+	background-color: bisque;
+}
+.cita span{
+	background-color: brown;
+	color: white;
+	border-radius: 20px;
+	padding-block: 0.5rem;
+	padding-inline: 1rem;
+	margin-left: 1rem;
+	flex-shrink: 0;
+}
+
+
+
+
+
+
+
+/* flex-shrink */
+.imagen{
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	background-color: bisque;
+	margin: 8rem;
+	padding:1rem;
+}
+.imagen img{
+	border-radius: 50%;
+	object-fit:cover;
+	width:5rem;
+	height:5rem;
+	flex-shrink: 0;
+}
+.imagen p{
+	text-align: justify;
+}
+
+
+.galeria {
+	 display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+
+	/* justify-content: space-evenly; */
+}
+
+.galeria > img{
+	width: 200px;
+	flex: 1;
+}

@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+*,::after,::before{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Gabarito',Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	background-color: #5fdfc4;
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 3rem;
+	padding-left: 2rem;
+	padding-block:2rem;
+}
+
+.container {
+	width: 250px;
+	background-color: white;
+	padding: 0.5rem;
+
+	border-radius: 5px;
+
+	position:absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.contador {
+	padding: 0.5rem;
+	background-color: #d6f8e6;
+	color: darkorange;
+	border-radius: 5px;
+	margin-left: auto;
+}
+
+.texto {
+}
+
+i {
+	margin: 0px 5px;
+}
+
+
+.oculto{
+	display: none;
+}

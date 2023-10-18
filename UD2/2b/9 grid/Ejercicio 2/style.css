@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body{
+	background-color: #fff;
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding: 1rem;
+}
+
+h1{
+	font-weight: 200;
+	text-align: center;
+}
+
+main{
+	margin: 0 auto;
+	height: 50vh;
+	width: 75vw;
+	color: white;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: 
+	'a b d'
+	'e c c'
+	'f c c';
+	gap: 1rem;
+}
+
+main > div{
+	font-size: 2rem;
+	display: grid;
+	place-items: center;
+}
+
+main > div:nth-child(1){
+	background-color: #00dd99;
+	grid-area: a;
+}
+main>div:nth-child(2) {
+	background-color: #dd9900;
+	grid-area: b;
+}
+main>div:nth-child(3) {
+	background-color: #99dd00;
+	grid-area: c;
+}
+main>div:nth-child(4) {
+	background-color: #9900dd;
+	grid-area: d;
+}
+main>div:nth-child(5) {
+	background-color: #dd0099;
+	grid-area: e;
+}
+main>div:nth-child(6) {
+	background-color: #0099dd;
+	grid-area: f;
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body{
+	background-color: #fff;
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"cabecera cabecera principal"
+	"formulario navegación principal"
+	"formulario pie pie";
+	gap: 1rem;
+
+}
+
+/* p, h1, ul { margin:0;} */
+
+header{
+	background-color: #eea8d2;
+	grid-area: cabecera;
+}
+
+main{
+	background-color: #eed2a8;
+	grid-area: principal;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+main >div{
+	background-color: #fee2b8;
+}
+.saludo {
+	background-color: #dec298;
+	text-align: center;
+	grid-column: 1/4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav{
+	background-color: #d2a8ee;
+	grid-area: navegación;
+}
+
+footer{
+	background-color: #d2eea8;
+	grid-area: pie;
+}
+
+.formulario{
+	background-color: #a8d2ee;
+	grid-area: formulario;
+}
+
+
+
+
+h1{
+	font-weight: 100;
+}

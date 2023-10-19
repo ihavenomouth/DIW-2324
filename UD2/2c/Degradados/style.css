@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 100ch;
+	margin:0 auto;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+background-image: linear-gradient(108.7deg, hsl(299, 63%, 21%) 11%, rgb(78, 18, 130) 88.2%);
+	color: #abc;
+}
+
+main{
+	/* background-color: #444;
+	background-image: linear-gradient(#444, black); */
+	padding: 3rem;	
+	background-color: white;
+}
+h1{
+	font-weight: 900;
+	font-size: 6rem;
+	background-image: linear-gradient( red 2%, transparent);
+	background-clip: text;
+	color:transparent;
+}
+h1::before{
+	content: '-[ ';
+}
+h1::after {
+	content: ' ]-';
+}
+
+pre{
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: beige;
+	background-image: linear-gradient( slategray, #444 60%);
+}
+
+h2{
+	font-weight: 900;
+	font-size: 4rem;
+	background-image: linear-gradient(white, #bbb);
+	background-clip: text;
+	color:transparent;
+	width: fit-content;
+}
+h2:nth-child(2):hover{
+	background-image: linear-gradient(-45deg,deepskyblue, blue);
+}
+h2:nth-child(3):hover{
+	background-image: linear-gradient(-45deg,rgb(186, 16, 186), deeppink);
+}
+h2:nth-child(4):hover{
+	background-image: linear-gradient(45deg,rgb(243, 34, 69) 20%,goldenrod 80%);
+}
+
+
+
+
+.card {
+	box-shadow: 0 0 10px 1px #00000080;
+	border-radius: 10px;
+	min-height: 250px;
+	width: 30ch;
+	padding: 0.5rem;
+	margin: auto;
+	color: #444;
+	background-color: #eee;
+	opacity: 0.5;
+		transition: opacity 1350ms ease, transform 1250ms ease-in;
+	position: relative;
+}
+
+.card:hover {
+	opacity: 1;
+	transform: translateY(-10px);
+		transition: opacity 350ms ease, transform 250ms ease-in;
+}
+
+.card-title {
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 300;
+	background-image: linear-gradient(90deg, #fff0, white, #fff0);
+}
+
+.card-content {
+	text-align: justify;
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	/*top:0;right:0;bottom:0;left:0;*/
+	border-radius: 10px;
+	z-index: -1;
+	clip-path: circle(0% at 0 0);
+	transition: clip-path 500ms ease;
+
+}
+
+.card:hover::before {
+	clip-path: circle(100%);
+	background-color: aquamarine;
+}

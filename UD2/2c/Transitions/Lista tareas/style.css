@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding:1rem;
+	background-color: #fff;
+	max-width: 80ch;
+}
+
+h1{
+	padding:2rem;
+	font-weight: 200;
+	color: #444;
+	box-shadow: 0 0 10px #eee;
+}
+
+.información-extra-card{
+	border: 1px solid goldenrod;
+	padding: 1rem;
+	float: right;
+	width: 20ch;
+	position: relative;
+	border-radius: 5px;
+}
+
+.información-extra-card::after{
+	content: 'info';
+}
+
+.información-extra{
+	border-radius: 5px;
+	color: white;
+	background-color: goldenrod;
+	border: 1px solid goldenrod;
+	scrollbar-width: thin;
+	scrollbar-color: hsl(43, 74%, 39%) white;
+	max-height: 180px;
+
+	overflow-y: auto;
+	overflow-x: none;
+	padding: 0.25rem;
+	position: absolute;
+	left: -1rem;
+	right: 1rem;
+
+	opacity:0;
+   transform: translateX(-10000px);
+}
+
+.información-extra.visible{
+	opacity:1;
+   transform: translateX(0px);
+}
+
+.información-extra-card > button{
+	border-radius: 5px;
+	border:1px solid white;
+	padding: 0.25rem;
+	background-color: goldenrod;
+	color: white;
+	width: 2rem;
+   height: 2rem;
+}
+.información-extra-card > button.visible{
+	transform: rotate(90deg);
+}

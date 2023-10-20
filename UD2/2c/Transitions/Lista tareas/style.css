@@ -8,10 +8,9 @@ body{
 	color: #444;
 	font-family: roboto, arial, sans-serif;
 	min-height: 100vh;
-	margin: 0 auto;
+	margin: 0;
 	padding:1rem;
 	background-color: #fff;
-	max-width: 80ch;
 }
 
 h1{
@@ -21,53 +20,47 @@ h1{
 	box-shadow: 0 0 10px #eee;
 }
 
-.información-extra-card{
-	border: 1px solid goldenrod;
+.lista-tareas{
+	margin: 1rem;
+	box-shadow: 0 0 10px #eee;
 	padding: 1rem;
-	float: right;
-	width: 20ch;
-	position: relative;
-	border-radius: 5px;
+	display:flex;
+	gap: 1rem;
+}
+.lista-tareas-sinhacer{
+	background-color: #ffeeee;
+	flex: 1 0 40%;
+}
+.lista-tareas-completadas{
+	background-color: #eeeeff;
+	flex: 1 0 40%;
+}
+.lista-tareas-item {
+	padding: 1rem;
+	box-shadow: 0px 0px 20px white inset;
+	cursor: pointer;
+}
+.lista-tareas-item::after{
+	content: ' ▶'
 }
 
-.información-extra-card::after{
-	content: 'info';
+
+.lista-tareas-item.lista-tareas-item-completado{
+	padding: 1rem;
+	cursor: pointer;
+	transform: translateX(calc(100% + 1rem)) ;
+}
+.lista-tareas-item.lista-tareas-item-completado::after{
+	content:'';
+}
+.lista-tareas-item.lista-tareas-item-completado::before{
+	content:'◀ ';
 }
 
-.información-extra{
-	border-radius: 5px;
-	color: white;
-	background-color: goldenrod;
-	border: 1px solid goldenrod;
-	scrollbar-width: thin;
-	scrollbar-color: hsl(43, 74%, 39%) white;
-	max-height: 180px;
 
-	overflow-y: auto;
-	overflow-x: none;
-	padding: 0.25rem;
-	position: absolute;
-	left: -1rem;
-	right: 1rem;
-
-	opacity:0;
-   transform: translateX(-10000px);
+.lista-tareas-titulo{
+	background-color: #4441;
+	padding: 1rem;
+	font-size: 1.25rem;
 }
 
-.información-extra.visible{
-	opacity:1;
-   transform: translateX(0px);
-}
-
-.información-extra-card > button{
-	border-radius: 5px;
-	border:1px solid white;
-	padding: 0.25rem;
-	background-color: goldenrod;
-	color: white;
-	width: 2rem;
-   height: 2rem;
-}
-.información-extra-card > button.visible{
-	transform: rotate(90deg);
-}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="code.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+      <h1>Menú con submenú</h1>
+
+      <div id="btnVer">Ver menú</div>
+
+
+
+      <p>Partiendo del truco para mostrar contenido oculto de manera suave, crea un menú con submenú.</p>
+
+      <p>HTML:</p>
+      <pre>
+&lt;div class="wrapper"&gt;
+  &lt;div class="inner">Expandable content&lt;/div&gt;
+&lt;/div&gt; 
+      </pre>
+
+      <p>CSS:</p>
+      <pre>
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+.wrapper.is-open {
+  grid-template-rows: 1fr;
+}
+
+.inner {
+  overflow: hidden;
+}
+      </pre>
+
+
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime qui repellat perspiciatis placeat sunt aliquam, amet, exercitationem quasi architecto aut praesentium consequatur sapiente animi quaerat quam minima nisi, tempora aliquid.
+      </p>
+       <p>
+        <img src="menuysubmenu.gif" alt="">
+      </p>
+  </body>
+</html>

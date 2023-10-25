@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding:1rem;
+	background-color: #fff;
+}
+
+h1{
+	padding:2rem;
+	font-weight: 200;
+	color: #444;
+	box-shadow: 0 0 10px #eee;
+}
+
+
+.menu, .submenu{
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.25s ease-out 0.25s;
+ }
+
+.menu{
+	position:absolute;
+	cursor: pointer;
+	background-color: #fee;
+}
+
+ /* .wrapper.is-open {
+	grid-template-rows: 1fr;
+ } */
+ .menu .inner-menu {
+	overflow: hidden;
+	min-width: 20ch;
+ }
+
+ .submenu .inner-menu {
+	overflow: hidden;
+	padding-left:1rem;
+}
+
+ .btnMenu{
+	background-color: lightcoral;
+	color:white;
+	padding: 1rem;
+	width: fit-content;
+	cursor: pointer;
+ }
+ .btnMenu:hover + .menu,  .btn-submenu:hover + .submenu{
+	grid-template-rows: 1fr;
+ }
+
+ .menu:hover, .submenu:hover{
+	grid-template-rows: 1fr;
+ }
+
+
+ .menu-item a{
+	text-decoration: none;
+	color:lightcoral
+ }
+ 
+.inner-menu>div.menu-item{
+	background-color: #fee;
+	padding: 0.25rem;
+}
+.inner-menu>div.menu-item:hover{
+	background-color: #fdd;
+}
+
+
+
+ .btn-submenu{
+	padding: 0.25rem;
+	color: lightcoral;
+ }
+ .btn-submenu::after{
+	content: ' ▶';
+ }
+ /* .btn-submenu:hover + .submenu{
+	grid-template-rows: 1fr;
+ }
+ .submenu:hover{
+	grid-template-rows: 1fr;
+ }
+*/

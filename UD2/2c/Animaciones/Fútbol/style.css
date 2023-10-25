@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	color: #444;
+	font-family: roboto, arial, sans-serif;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding:1rem;
+	background-color: #fff;
+	max-width: 80ch;
+}
+
+h1{
+	padding:2rem;
+	font-weight: 200;
+	color: #444;
+	box-shadow: 0 0 10px #eee;
+	animation-name: shadow-drop-bottom;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shadow-drop-bottom{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 12px 20px -12px rgba(0,0,0,.35)}}
+
+#ball{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100px;
+	animation-name: gira, mueve;
+	animation-duration: 1s, 2s;
+	animation-iteration-count: 2,4;
+	animation-timing-function: linear;
+}
+
+@keyframes gira{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes mueve{
+	0%{
+		left: 0;
+		top:0;
+	}
+	25%{
+		left:15rem;
+		top:0;
+	}
+	50%{
+		top: 15rem;
+		left:15rem;
+	}
+	75%{
+		left:0;
+		top: 15rem;
+	}
+}

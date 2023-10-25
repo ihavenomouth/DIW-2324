@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+
+h1{
+	font-family: Gabarito, Arial, Arial, Helvetica, sans-serif;
+	font-size: 4rem;
+	font-weight: 200;
+}
+
+button{
+	background-color: #357;
+	border-radius: 3px;
+	border: 1px solid black;
+	color: whitesmoke;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	font-size: 1rem;
+	position: relative;
+	z-index:0;
+}
+
+
+button::before{
+	content: "";
+	z-index: -1;
+	position: absolute;
+	inset: 0;
+	clip-path: circle(0% at -20px 50%);
+	transition: clip-path 500ms ease;
+	background-color: #39c;
+}
+
+
+button:hover::before{
+	clip-path: circle(100% at -5px 50%);
+	background-color: #39c;
+}

@@ -17,7 +17,7 @@ main{
 	/* background-color: #444;
 	background-image: linear-gradient(#444, black); */
 	padding: 3rem;	
-	background-color: white;
+	background-color: #444;
 }
 h1{
 	font-weight: 900;
@@ -46,6 +46,7 @@ h2{
 	font-size: 4rem;
 	background-image: linear-gradient(white, #bbb);
 	background-clip: text;
+	-webkit-background-clip: text;
 	color:transparent;
 	width: fit-content;
 }

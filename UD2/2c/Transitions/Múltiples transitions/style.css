@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Tilt+Neon:regular);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	margin:0;
+	min-height:100vh;
+	font-family: 'Tilt Neon',Arial, Helvetica, sans-serif;
+}
+
+header{
+	height:100vh;
+	overflow: hidden;
+	position:relative;
+}
+
+.hero{
+	background-image: url("pexels-godisable-jacob-794062.jpg");
+	background-position:center;
+
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 40px;
+	transition: transform 2s;
+}
+
+.hero:hover{
+	transform: scale(1.25);
+}
+
+.hero-content{
+	position:absolute;
+	top: 40px;
+	left: min(40px, 5vw);
+	background-color: #0003;
+	padding:2rem;
+	border-radius: 5px;
+}
+
+h1{
+	font-weight: 100;
+	font-size: clamp(3rem, 5vw,5rem);
+	color: white;
+	background-color: #663399bb;
+	padding: 2rem;
+}
+
+.hero-content p{
+	font-style: italic;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.hero-content a{
+	outline: 2px solid #663399;
+	padding-block: 1rem;
+	padding-inline: 3rem;
+	background-color: #663399;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s background-color;
+}
+.hero-content a:hover{
+	background-color: transparent;
+}
+
+.popup{
+	background-color: #000E;
+	color:goldenrod;
+	padding:1rem;
+	z-index:2;
+	border-radius: 5px;
+	max-width: 40ch;
+	position:fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-content p{
+	font-size: initial;
+}
+.popup-content a{
+	background-color: initial;
+	outline: initial;
+	padding-block: initial;
+	padding-inline: initial;
+	background-color: #663399;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s background-color;
+}
+
+#ofertas-popup{
+	display:none;
+}
+#ofertas-popup:target{
+	display:block;
+}
+
+main{
+	background-image: linear-gradient(#f9940e -50%,transparent 30%);
+  border-top: 20px solid rebeccapurple;
+}
+
+main section{
+	max-width: 60ch;
+	margin: 0 auto;
+	color: goldenrod;
+}
+
+main section h2{
+	color: black;
+	font-size: 3rem;
+}

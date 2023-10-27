@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic);
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #044;
+  font-family: 'Lora', serif;
+  min-height: 100vh;
+  margin: 0;
+  color: #f0f0ff;
+}
+
+header{
+  background-image: linear-gradient(transparent 80%, #400040);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top;
+  padding:1rem;
+}
+h1{
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 4rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+header p{
+  max-width: 80ch;
+}
+
+main{
+  background-image: linear-gradient(transparent 20%, #400040);
+  border-top: 4px solid cyan;
+}
+
+section{
+  max-width: 60ch;
+  padding:2rem;
+  margin: 0 auto;
+  height: 100vh;
+  overflow:hidden;
+}
+
+h2{
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.hidden{
+  /* visibility: hidden; */
+  opacity:0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 2s;
+}
+.show{
+  /* visibility: visible; */
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden {
+    transition: none;
+  }
+}
+
+div.avatares{
+  display:flex;
+  flex-wrap: wrap;
+}
+.d1{transition-delay:100ms}
+.d2{transition-delay:200ms}
+.d3{transition-delay:300ms}
+.d4{transition-delay:400ms}
+.d5{transition-delay:500ms}
+.d6{transition-delay:600ms}
+.d7{transition-delay:700ms}
+.d8{transition-delay:800ms}
+.d9{transition-delay:900ms}

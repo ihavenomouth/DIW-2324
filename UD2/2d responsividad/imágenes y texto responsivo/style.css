@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900);
+
+*,::before,::after{  box-sizing: border-box; }
+
+body{
+  background-color: #222;
+  color: whitesmoke;
+  font-family: 'Geologica',Arial, Helvetica, sans-serif;
+  
+  max-width: 70ch;
+  margin:0 auto;
+}
+a{  
+  color: cornflowerblue; 
+}
+
+img.fluid {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+/* img.fluid {
+	min-width: 250px;
+	max-width: 500px;
+	width: 100%;
+} */
+
+
+
+.img-container{
+  padding: 2rem;
+}
+@media screen and (width<=500px) {
+  .img-container{
+    padding: 0rem;
+  }
+}
+
+
+
+h1{
+  font-size: clamp(3rem, 10vw, 5rem);
+}
+
+/* @media screen and (width<=40rem) {
+  h1{
+    font-size: 3rem;
+  }
+} */

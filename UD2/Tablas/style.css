@@ -1,38 +1,127 @@
-@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900);
 
 *,::before,::after{
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root{
+  --accent-color: rgba(0,212,255,1);
 }
 
 body{
-	font-family: Gabarito, Arial, Helvetica, sans-serif;
-	background-color: #456;
-	color: #eee;
+  background-color: #234;
+  font-family: 'Geologica', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  color: #f0f0ff;
 }
+
 header{
-	min-height: 50vh;
-	display: grid;
-	place-items: center;
-	border-bottom: 4px solid white;
+  background-color: #123;
 }
 h1{
-	font-size: 5rem;
-	font-weight: 200;
+  padding: 2rem;
+  font-weight: 300;
+  font-size: clamp(3rem,8vw,4rem);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-image: radial-gradient(circle at 25% 0%, var(--accent-color) 0%, hsl(240, 56%, 50%) 84%);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 main{
-	max-width: 60ch;
-	margin: 0 auto;
+  max-width: 100ch;
+  margin:0 auto;
+  padding:1rem;
 }
 
 table{
-	min-width: 50vw;
-	border-collapse: collapse;
+  margin:0 auto;
+  /* border-collapse: collapse; */
+  /* background-image: radial-gradient(to 100%, orange, transparent); */
+  background-image: radial-gradient(circle, var(--accent-color) 0%, rgba(2,0,36,1) 70%, rgba(9,9,121,1) 84%, transparent 100%);
+  background-size: 150%;
+  animation: mueve-fondo-tabla 10s infinite alternate;
 }
 
-td,th{
-	border: 1px solid white;
+@keyframes mueve-fondo-tabla{
+  0%{
+    background-position: top right;
+  }
+  25%{
+    background-position: top left;
+  }
+  50%{
+    background-position: center;
+  }
+  75%{
+    background-position: bottom left;
+  }
+  100%{
+    background-position: bottom right;
+  }
 }
 
+td, th{
+  background-color: #345;
+  text-align: center;
+  padding-block: 0.5rem;
+  padding-inline: 2.5rem;
+}
 
+.idioma{
+  background-color: #456;
+}
+
+th{
+  color: var(--accent-color);
+}
+
+tfoot th{
+  font-weight: 100;
+  background-color: #234;
+}
+sup{
+  color: var(--accent-color);
+  font-size: 0.6rem;
+}
+
+td:hover,th:hover{
+  filter:brightness(1.4);
+}
+caption{
+  font-variant: small-caps;
+  background-image: radial-gradient(circle, transparent 70%,  hsl(240, 56%, 50%) 90%, var(--accent-color) 100% );
+  margin-bottom: 0.5rem;
+}
+
+.idioma span.coma::before{
+  content: ", ";
+}
+
+@media screen and (width<40rem){
+  tfoot {
+    display: none;
+  }
+  sup{
+    display:none;
+  }
+  td, th{
+    background-color: #345;
+    text-align: center;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+  }
+  caption{
+    background-image: none;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  .idioma span.coma::before{
+    content: "\a";
+    white-space: pre;
+  }
+}
 

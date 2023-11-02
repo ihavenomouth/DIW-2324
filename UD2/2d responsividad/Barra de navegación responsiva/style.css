@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+:root{ 
+  --bg-header: #357; 
+}
+
+
+*,::before,::after{box-sizing: border-box;}
+body{	
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin:0;
+}
+h1 {
+  font-weight: normal; 
+  font-size: clamp(1.2rem, 6vw, 2rem)
+}
+main{
+  max-width: 60ch;
+  margin-inline: auto;
+  background-color: #eef;
+  padding: 1rem;
+}
+
+img.logo{
+  max-height: 100%; /* la imagen es muy grande, limitamos el tamaño */
+  margin-inline: 1rem;
+  filter: invert() opacity(0.9); /* el logo es negro, pero queda mejor blanco */
+  padding: 5px;
+}
+
+header{
+  background-color: var(--bg-header);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: #def;
+}
+
+nav{
+  margin-left: auto;
+  margin-right: 1rem;
+  position: relative;
+}
+
+nav ul{ /* esta lista son las opciones de navegación del menú */
+  display:flex;
+  flex-direction: row;
+  gap:1rem;
+  width: max-content;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  filter: brightness(0.9);
+  border-bottom: 1px solid white;
+}
+
+header i.fa-bars{ /* el icono del menú hamburguesa*/
+  display: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.menu-visible {
+  display: flex;
+}
+
+
+@media screen and (width <= 80ch ){
+  main{ background-color: #6ea; }
+  header i.fa-bars {
+    display: block;
+  }
+  nav ul {
+    background-color: var(--bg-header);
+    flex-direction:column;
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 1rem;
+    display: none;
+  }
+}

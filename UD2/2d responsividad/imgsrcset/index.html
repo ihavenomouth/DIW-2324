@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Web programming</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<!-- link rel="stylesheet" href="https://cdn.simplecss.org/simple.css" -->
+	</head>
+
+
+	<body style="padding: 1rem;">
+
+		<h1>Imágenes responsivas</h1>
+	
+		<p>Se usa el atributo <code>srcset</code> para indicar resoluciones diferentes de la misma imagen. Evidentemente se puede cambiar también la imagen, para crear imágenes responsivas, pero sólo las podrá seleccionar correctamente el navegador si tienen la misma relación de aspecto (la misma relación entre el ancho y el alto de la imagen).</p>
+		<p>En el ejemplo de abajo la imagen elegida ocupa un 50% del ancho del viewport por defecto. Cuando éste tenga un tamaño menor que 650px, se usará la imagen de menor resolución que ocupará el 30% del ancho del viewport.</p>
+		<div style="display:flex;align-items: center; gap:1rem; background-color: aquamarine;">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minus laboriosam, repellat ea maxime aliquam voluptatum nulla quia fuga est voluptatibus beatae libero saepe quis alias odio qui, iste sit.
+			</p>
+			<aside>
+				<img src="logo_grande.jpeg" 
+				alt="Logotipo" 
+				srcset="
+				logo_grande(reducido).jpeg 325w, 
+				logo_grande.jpeg 650w"
+				sizes="
+				(max-width: 650px) 30vw,
+				50vw" 
+				title="Imagen responsiva">
+			</aside>
+		</div>
+
+		<p>Se usa la etiqueta <code>picture</code> para indicar imágenes diferentes a utilizar en función del ancho de la pantalla.</p>
+
+		<div style="text-align: center;">
+			<picture>
+				<source srcset="isotipo.jpeg" media="(max-width: 360px)" />
+				<source srcset="logo_peq.jpeg" media="(max-width: 500px)" />
+				<source srcset="logo_med.jpeg" media="(max-width: 700px)" />
+				<img src="logo_grande.jpeg" alt="Logotipo Disney" />
+			</picture>
+		</div>
+
+		<p>Esto puede ser útil para mostrar un logotipo grande si la web está siendo accedida desde el escritorio, pero uno pequeño o un isotipo si está siendo accedida desde un móvil.</p>
+		<p>Además también contribuye a reducir el ancho de banda al cargar una imagen más pequeña.</p>
+
+	
+	
+		<script src="code.js"></script>
+		
+	</body>
+
+</html>

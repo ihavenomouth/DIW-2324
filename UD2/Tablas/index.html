@@ -1,41 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Tabla</h1>
-	</header>
-	
-	<main>
-	<table>
-		<caption>Idiomas hablados</caption>
-		<thead>
-			<tr>
-				<th>Idioma</th><th>Nivel</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Inglés</td>
-				<td>C1</td>
-			</tr>
-			<tr>
-				<td>Francés</td>
-				<td>B2</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<th colspan="2">Datos inventados</th>
-			</tr>
-		</tfoot>
-	</table>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  </main>
-</body>
+    <script defer src="code.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Estilando una tabla</h1>
+    </header>
+  
+    <main>
+      <table>
+        <caption>Idiomas</caption>
+        <thead>
+          <tr>
+            <th class="idioma">Idioma</th>
+            <th>Nivel</th>
+            <th>Título</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" class="idioma">Inglés</td>
+            <td>C1</td>
+            <td>E.O.I.<sup>1</sup></td>
+          </tr>
+          <tr>
+            <td>B2</td>
+            <td>FCE<sup>2</sup> (Cambridge)</td>
+          </tr>
+          <tr>
+            <td>B1</td>
+            <td>E.O.I.<sup>1</sup></td>
+          </tr>
+          <tr>
+            <td class="idioma">Francés</td>
+            <td>A2</td>
+            <td>E.O.I.<sup>1</sup></td>
+          </tr>
+          <tr>
+            <td class="idioma">Portugués<span class="coma"></span>Italiano</td>
+            <td colspan="2">Conocimiento básico</td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">
+              <p><sup>1</sup> E.O.I. = Escuela oficial de idiomas</p>
+              <p><sup>2</sup> FCE = First Certificate of English</p>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+   </main>
+  </body>
 </html>

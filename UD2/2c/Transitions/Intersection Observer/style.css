@@ -82,3 +82,7 @@ div.avatares{
 .d7{transition-delay:700ms}
 .d8{transition-delay:800ms}
 .d9{transition-delay:900ms}
+
+.flex{
+  display:flex;
+}

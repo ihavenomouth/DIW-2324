@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900);
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Gabarito, Arial, Helvetica, sans-serif;
+	background-color: #456;
+	color: #eee;
+}
+header{
+	min-height: 50vh;
+	display: grid;
+	place-items: center;
+	border-bottom: 4px solid white;
+}
+h1{
+	font-size: 5rem;
+	font-weight: 200;
+}
+
+main{
+	max-width: 60ch;
+	margin: 0 auto;
+}
+
+table{
+	min-width: 50vw;
+	border-collapse: collapse;
+}
+
+td,th{
+	border: 1px solid white;
+}
+
+
+

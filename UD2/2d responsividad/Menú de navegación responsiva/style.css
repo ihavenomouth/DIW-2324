@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
+
+*,::before,::after{
+box-sizing: border-box;
+}
+
+body{
+background-color: #101;
+font-family: 'Space Grotesk', arial, sans-serif;
+min-height: 100vh;
+margin: 0;
+color: #f0f0ff;
+}
+
+header{
+min-height: 100vh;
+background-image: url("stars.png");
+background-size: cover;
+background-position: top;
+display: grid;
+place-items: center;
+}
+
+h1{
+padding: 2rem;
+font-weight: 300;
+font-size: 4rem;
+margin-top:0;
+background-color: #2028;
+}
+
+main{
+background-image: linear-gradient(transparent 20%, #400040);
+border-top: 4px solid goldenrod;
+}
+
+section{
+max-width: 60ch;
+padding:2rem;
+margin: 0 auto;
+}
+
+
+nav a{
+  color: #f0f0ff;
+  text-decoration: none;
+}
+nav a:hover{
+  color: goldenrod;
+}
+nav a span{
+  margin-right: 1ch;
+  font-weight: 700;
+}
+
+nav ul{
+  list-style: none;
+  padding:1rem;
+  margin:0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav{
+  background-color: #400040B0;
+  display: flex;
+  justify-content: end;
+  backdrop-filter: blur(2px);
+}
+
+#btnToggleMenu{
+  display: none;
+}
+
+@media (width<=50rem){
+  nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50vw;
+    justify-content: start;
+    /* Movimiento */
+    transform: translateX(1000px);
+    transition: transform 0.5s ease-in;
+  }
+  nav ul{
+    flex-direction: column;  
+    margin-top: 5rem;
+  }
+
+  nav.expandido{
+    transform: translateX(0);
+  }
+
+  #btnToggleMenu{
+    display: initial;
+    position:fixed;
+    right:2rem;
+    top: 2rem;
+	   /* Por encima del menú */
+	   z-index:1;
+	   /* Estética */
+	   background-color: transparent;
+	   color: inherit;
+	   border: 0;
+  }
+  #btnToggleMenu:hover{
+    color: goldenrod;
+    cursor: pointer;
+  }
+}

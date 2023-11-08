@@ -1,0 +1,22 @@
+
+
+
+
+input[type=file]{
+  display: none;
+}
+
+input[type=checkbox]{
+  display:none;
+}
+
+input[type=checkbox] ~ label::before {
+  content: "- ";
+  background-color:green;
+}
+
+input[type=checkbox]:checked ~ label::before {
+  content: "x ";
+  background-color: red;
+}
+}

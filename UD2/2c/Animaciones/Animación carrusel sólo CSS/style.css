@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900);
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --accent-color: rgba(0,212,255,1);
+}
+
+body{
+  background-color: #222;
+  color: whitesmoke;
+  font-family: 'Geologica',Arial, Helvetica, sans-serif;
+  margin:0;
+}
+
+
+header{
+  background-color: #125;
+  color: whitesmoke;
+  height: 50vh;
+  display: flex;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index:0;
+}
+
+h1{
+  width:100vw;
+  text-align: center;
+  padding:2rem;
+  font-weight: 900;
+}
+

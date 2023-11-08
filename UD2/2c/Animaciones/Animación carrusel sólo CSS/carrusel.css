@@ -1,0 +1,34 @@
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+
+.carrusel{
+  margin:3rem;
+  overflow:hidden;
+  border-radius: 6px;
+  padding:0;
+}
+
+.carrusel img{
+  width:var(--carrusel-img-width);
+}
+.carrusel a{
+  line-height: 0;
+}
+
+.rail{
+  display: flex;
+  width: auto;
+  animation: mueve-imagenes-carrusel var(--carrusel-duration) infinite alternate ease-in-out;
+}
+
+@keyframes mueve-imagenes-carrusel {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX( calc( ( var(--carrusel-num-items) * -1 * var(--carrusel-img-width) + 100% ) ) );
+  }
+}

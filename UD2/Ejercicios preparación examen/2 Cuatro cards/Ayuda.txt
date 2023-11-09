@@ -1,0 +1,16 @@
+Responsividad: 
+- Móvil: 375px
+- Escritorio: 1440px
+
+Colores:
+- Rojo: hsl(0, 78%, 62%)
+- Cian: hsl(180, 62%, 55%)
+- Naranja: hsl(34, 97%, 64%)
+- Azul: hsl(212, 86%, 64%)
+
+- Azul oscuro: hsl(234, 12%, 34%)
+- Gris azulado: hsl(229, 6%, 66%)
+- Gris claro: hsl(0, 0%, 98%)
+
+Tipografía:
+Poppins (peso 200, 400, 600)

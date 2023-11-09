@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:regular);
+
+
+*,::after,::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  background-color: hsl(233, 47%, 7%);
+  color:white;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  padding: 2rem;
+}
+
+.card{
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 16px;
+  display: flex;
+  overflow: hidden;
+  max-width: 120ch;
+}
+
+div.image{
+  width: 50%;
+  background-image: url("imagen.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: luminosity;
+}
+div.text{
+  padding: 4rem;
+  width: 50%;
+}
+
+div.text > p{
+  color: rgba(255,255,255, 0.75);
+}
+
+h1{
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+h1 span{
+  color:hsl(277, 64%, 61%);
+}
+
+
+div.estadisticas{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.estadisticas p.data{
+  color: white;
+  font-size: 2rem;
+  font-weight:700;
+}
+
+div.estadisticas p{
+  color: rgba(255,255,255, 0.6);
+  font-variant: small-caps;
+}
+
+@media screen and (width<1440px) {
+  .card{
+    flex-direction: column-reverse;
+  }
+  .card > div{
+    width: 100%;
+  }
+  div.image{
+    height: 480px;
+    background-image: url("imagen.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: luminosity;
+  }
+  h1{
+    text-align: center;
+  }
+  div.text > p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  div.estadisticas{
+    flex-direction: column;
+    align-items: center;
+  }
+  div.estadisticas p{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  div.estadisticas p.data{
+    font-size: 2.5rem;
+  }
+}

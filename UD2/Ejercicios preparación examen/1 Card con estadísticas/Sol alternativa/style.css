@@ -14,28 +14,37 @@ body{
   place-items: center;
   min-height: 100vh;
   font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  padding: 2rem;
 }
 
 .card{
   background-color: hsl(244, 38%, 16%);
-  border-radius: 20px;
+  border-radius: 16px;
   display: flex;
   overflow: hidden;
   max-width: 120ch;
 }
 
-.card > div{
-  flex: 1;
+div.image{
+  width: 50%;
+  background-blend-mode: luminosity;
+  position: relative;
 }
-
-.images img{
-  display: block;
+div.image::after{
+  position:absolute;
+  content: "";
+  /* background-color: hsl(277, 64%, 61%, 0.5); */
+  background-color: hsl(277, 64%, 61%, 0.4);
+  filter:brightness(0.3) saturate(4);
+  inset:0;
+}
+div.image img{
   height: 100%;
-  filter: hue-rotate(90deg);
 }
 
 div.text{
   padding: 4rem;
+  width: 50%;
 }
 
 div.text > p{
@@ -64,4 +73,38 @@ div.estadisticas p.data{
 
 div.estadisticas p{
   color: rgba(255,255,255, 0.6);
+  font-variant: small-caps;
+}
+
+@media screen and (width<1440px) {
+  .card{
+    flex-direction: column-reverse;
+  }
+  .card > div{
+    width: 100%;
+  }
+  div.image{
+    /* height: 480px; */
+  }
+  div.image img{
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+  }
+  div.text > p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  div.estadisticas{
+    flex-direction: column;
+    align-items: center;
+  }
+  div.estadisticas p{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  div.estadisticas p.data{
+    font-size: 2.5rem;
+  }
 }

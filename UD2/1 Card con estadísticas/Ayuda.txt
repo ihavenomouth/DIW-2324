@@ -1,0 +1,17 @@
+
+Responsividad
+- Móvil: 375px
+- Escritorio: 1440px
+
+Colores:
+Fondo: hsl(233, 47%, 7%)
+Fondo del card: hsl(244, 38%, 16%)
+Violeta: hsl(277, 64%, 61%)
+
+El texto es Blanco (el párrafo es blanco con una opacidad del 75% y la estadísticas con una opacidad del 60%)
+
+
+
+Tipos de letra: 
+Inter (peso 400 700)
+Lexend Deca (peso 400)

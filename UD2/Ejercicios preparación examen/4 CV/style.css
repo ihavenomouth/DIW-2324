@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin:0;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background-color: #124;
+  color: whitesmoke;
+  min-height: 100vh;
+}
+
+img.profile{
+  border-radius: 50%;
+  width: 80%;
+}
+
+.profile{
+  grid-column: 1 / 2;
+}
+
+.main{
+  grid-column: 2 / 3;
+}
+

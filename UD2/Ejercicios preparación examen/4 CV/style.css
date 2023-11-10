@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,regular,italic,500);
+
 
 *,::before,::after{
   box-sizing: border-box;
@@ -9,21 +10,64 @@ body{
   margin:0;
   display: grid;
   grid-template-columns: 300px 1fr;
-  background-color: #124;
+  background-color: #040b14;
   color: whitesmoke;
   min-height: 100vh;
 }
 
 img.profile{
   border-radius: 50%;
-  width: 80%;
+  width: 65%;
+  margin:0 auto;
+  display: block;
+  margin-top: 2rem;
 }
 
-.profile{
+.sidebar{
   grid-column: 1 / 2;
 }
 
 .main{
   grid-column: 2 / 3;
+  background-image: url('pexels.jpg');
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: luminosity;
+  background-color: black;
+  padding: 2rem;
 }
 
+h1{
+  color: whitesmoke;
+  background-color: goldenrod;
+  text-align: center;
+  font-weight: 200;
+}
+
+h2{
+  color: goldenrod;
+  font-weight: 500;
+}
+
+h3{
+  color: goldenrod;
+  border-bottom: 4px dotted goldenrod;
+  font-weight: 500;
+}
+
+.sidebar ul{
+  border: 3px dotted white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+li{
+  margin-left: 2rem;
+}
+
+li::marker{
+  content:'- ';
+}
+a{
+  color: goldenrod;
+}

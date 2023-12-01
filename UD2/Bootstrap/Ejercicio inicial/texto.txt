@@ -1,0 +1,43 @@
+
+Certificado de profesionalidad
+Usando Bootstrap 5 para maquetar una web básica
+Enlaces
+Características del curso
+
+Información:
+
+    Nivel: 3
+    Cualificación profesional de referencia: Programación con lenguajes orientados a objetos y bases de datos relacionales
+    Competencia General: Desarrollar aplicaciones informáticas sobre el diseño especificado utilizando lenguajes orientados a objetos y bases de datos relacionales.
+
+Módulos formativos:
+
+    Sistemas operativos y aplicaciones informáticas
+    Programación de bases de datos relacionales
+    Programación orientada a objetos
+    Módulo de prácticas
+
+Sistemas operativos y aplicaciones informáticas
+
+Programación de bases de datos relacionales
+
+Programación orientada a objetos
+Diseño web al alcance de todos
+
+Hacer un diseño de una web nunca fue tan sencillo.
+
+Bootstrap simplifica la creación y organización de los elementos en la página sin ocultar el HTML ni el CSS.
+
+Si necesitas hacer uso de CSS personalizado a algún elemento, puedes crear tu propio fichero de hoja de estilos.
+Totalmente responsive
+
+La organización de los elementos en la página se adapta al tamaño de la pantalla del dispositivo.
+
+Con Bootstrap podemos crear una web o una aplicación que se adapte al dispositivo que esté usando el usuario.
+
+Por ejemplo, la imagen que acompaña a este texto desaparece si la ventana es lo suficientemente pequeña.
+
+Horario: de lunes a viernes de 16:00 a 21:00
+
+IES Cristóbal de Monroy - Alcalá de Guadaíra - Sevilla
+

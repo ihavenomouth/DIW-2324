@@ -1,0 +1,19 @@
+Crear. Probar. Implementar.
+
+.NET es el marco multiplataforma gratuito de código abierto para compilar aplicaciones modernas y servicios eficaces en la nube.
+
+Web
+
+Cree aplicaciones y servicios web para macOS, Windows, Linux y Docker.
+
+Móvil y de escritorio
+
+Use un único código base para compilar aplicaciones nativas para Windows, macOS, iOS y Android.
+
+Nube
+
+Compile aplicaciones nativas de nube escalables y resistentes que se ejecuten en todos los principales proveedores de la nube.
+
+Microservicios
+
+Cree microservicios con implementación independiente que se ejecutan en contenedores de Docker.

@@ -1,0 +1,45 @@
+#cabecera{
+    background-image: url("img/imgPortada.jpg");
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    /* height: 500px; */
+}
+
+.iconos{
+    width: 50%;
+}
+
+#divCode{
+    background-image: url("img/code.jpg");
+    background-size: cover;    
+}
+
+#divDevices{
+    background-image: url("img/devices.jpg");
+    background-size: cover;
+}
+
+
+#iconocalendar{
+    width: 200px;
+    transform: rotate(-20deg);
+}
+
+.modulosformativos{
+    transition: background-color 1s ease;
+}
+.modulosformativos:hover{
+    background-color: var(--bs-gray-300);
+}
+
+.modulosformativos img{
+    transition: all 0.5s ease;
+}
+.modulosformativos img:hover{
+    transform: rotate(-10deg) scale(1.1);
+    /* transform: scale(1.1); */
+}
+

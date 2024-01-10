@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+<script defer 
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+ crossorigin="anonymous"></script>
+
+ <script defer src="alert.js"></script>
+</head>
+<body class="">
+
+
+  <header class="container-fluid bg-primary p-3 text-center">
+    <h1>Aprendiendo Bootstrap</h1>
+  </header>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container-lg bg-light p-3 mt-5">
+
+    <section>
+    <h2>Imágenes</h2>
+
+    <div class="row mb-5">
+      <div class="col-sm-6 col-md">
+        <img class="img-fluid" src="1.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md">
+        <img class="img-fluid" src="2.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md">
+        <img class="img-fluid" src="3.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md">
+        <img class="img-fluid" src="4.jpg" alt="">
+      </div>
+    </div>
+    <button type="button" class="btn btn-danger">Eliminar</button>
+    </section>
+
+    <section>
+      <h2>Card</h2>
+
+
+      <div id="liveAlertPlaceholder" style="position:fixed; bottom:0; right:0;"></div>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+
+    <section>
+      <h2>Formulario</h2>
+
+<form>
+  <div class="form-group row">
+    <label for="txtNombre" class="col-4 col-form-label">Nombre</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-500px"></i>
+          </div>
+        </div> 
+        <input id="txtNombre" name="txtNombre" placeholder="Javier Mancera" type="text" class="form-control" aria-describedby="txtNombreHelpBlock">
+      </div> 
+      <span id="txtNombreHelpBlock" class="form-text text-muted">Indica el nombre con los apellidos.</span>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="selectColor" class="col-4 col-form-label">Color preferido</label> 
+    <div class="col-8">
+      <select id="selectColor" name="selectColor" class="custom-select">
+        <option value="rojo">Rojo</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+      </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+    </section>
+    
+  </main>
+
+  
+</body>
+</html>

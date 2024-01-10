@@ -1,0 +1,3 @@
+No se ha copiado en la solución el contenido de la carpeta node_modules.
+El resultado final está en la carpeta "dist", para generarlo se ejecutó un
+npm run build
